@@ -6,18 +6,18 @@ You have two options to complete parts 1-3 (Install, Editors, Command Line).
 
 The process below is designed to be accessible to anyone regardless of background in `git`.  
 
-# :boom: Git 10-minute Video :boom: 
+# :boom: Git 10-minute Video :boom:
 
->**Watch this [10-minute video, *Getting Started with Git*](https://vimeo.com/178481263?mc_cid=06d951b22e&mc_eid=[UNIQID]), which covers all the steps below.** 
+>**Watch this [10-minute video, *Getting Started with Git*](https://vimeo.com/178481263?mc_cid=06d951b22e&mc_eid=[UNIQID]), which covers all the steps below.**
 The [list of commands used in the video](/resources/git_video_history.md) are available.
 
 ---
 
 # Git and GitHub:  What's the Difference?  
 
-**Git** is a system for version control. It runs at the command line on your local machine and allows you to keep track of your files and modifications in a "repository". 
+**Git** is a system for version control. It runs at the command line on your local machine and allows you to keep track of your files and modifications in a "repository".
 
-**GitHub** is a website that allows you to upload your git respositories online. It allows you to have a backup of your files, has a visual interface to navigate your repos, and it allows other people (us!) to be able to view your repos. 
+**GitHub** is a website that allows you to upload your git respositories online. It allows you to have a backup of your files, has a visual interface to navigate your repos, and it allows other people (us!) to be able to view your repos.
 
 ---
 
@@ -69,5 +69,4 @@ Here's your first chance to practice this:
 
 What is your favorite emoji?  (Check out this [emoji cheat sheet](http://www.emoji-cheat-sheet.com/).)
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+:satisfied:

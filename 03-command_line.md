@@ -21,15 +21,21 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 > > mkdir <directory name> - makes new directory
 > > mv <original file name> <new file name> -
-> > grep - search through files. use with pipe e.g. history | grep pwd
+> > grep "<text>" <file> - output occurrences of text inside file
 > > touch <filename> - create new file
 > > cd .. - change directory to parent level
 > > rm <filename> - delete file
 > > head <filename> - show first 10 lines of file
 > > tail -F <filename> - live output last 10 lines of file
-> > 
-> >
-> >
+> > !! - repeat last command
+> > find . -name "<text>" - find files by text in current directory
+> > !find - run last executed find command
+> > ls - list files
+> > cp <file> <directory> - copy file to directory
+> > curl -0 <url> - download file via http or ftp
+> > ping - ping host and display status
+> > less <file> - output contents of file (supports pagination)
+> > chmod 755 <file> - change file permissions to 755
 
 ---
 
@@ -44,7 +50,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls - no options, list files in bare format. no details provided
+> > ls -a - list all files including hidden files
+> > ls -l - shows file/directory size, modified date and time, file/folder name, owner of file and permission
+> > ls -lh - similar to -l, but with human-readable file sizes
+> > ls -lah - combination of -a and -lh
+> > ls -t - shows latest modification date as last
+> > ls -Glp - G adds color and p adds a slash (/) if a file is a directory
 
 ---
 
@@ -52,7 +64,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -r - reverse output order
+> > ls -F - same effect as -p
+> > ls -R - also displays subdirectories
+> > ls -u - show by file access time
+> > ls -C - display in columnar format
 
 ---
 
@@ -60,4 +76,12 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs takes a big list or arguments and divides it into a smaller list
+> > received from a standard input. For example, find . -name "*bash*" | xargs
+> > in the etc/ folder will return the multiline output into a single line.
+> > ./bash.bashrc
+> > ./bash.bash_logout
+> > ./defaults/etc/bash.bashrc
+> > ./defaults/etc/bash.bash_logout
+
+> > ./bash.bashrc ./bash.bash_logout ./defaults/etc/bash.bashrc ./defaults/etc/bash.bash_logout

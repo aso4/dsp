@@ -20,14 +20,14 @@ Here's a list of items with which you should be familiar:
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
 > > mkdir <directory name> - makes new directory
-> > mv <original file name> <new file name> - 
-> >
-> >
-> >
-> >
-> >
-> >
-> >
+> > mv <original file name> <new file name> -
+> > grep - search through files. use with pipe e.g. history | grep pwd
+> > touch <filename> - create new file
+> > cd .. - change directory to parent level
+> > rm <filename> - delete file
+> > head <filename> - show first 10 lines of file
+> > tail -F <filename> - live output last 10 lines of file
+> > 
 > >
 > >
 

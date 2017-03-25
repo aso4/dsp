@@ -15,6 +15,11 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
+    count = 0
+    for word in words:
+        if len(word) > 1 and word[0] == word[len(word)-1]:
+            count += 1
+    return count
     raise NotImplementedError
 
 
@@ -32,6 +37,12 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
+    # assumes list does not consist entirely of x words
+    words.sort()
+    while(words[len(words)-1][0] == 'x'):
+        word = words.pop()
+        words.insert(0, word)
+    return words
     raise NotImplementedError
 
 
@@ -49,8 +60,20 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
+    return sorted(tuples, key=lambda tupl: tupl[-1])
     raise NotImplementedError
 
+    # code I was attempting before I ran across sorted()
+    # assumed that tuples consist of non-negative numbers
+    # i = 0
+    # m = 0
+    #
+    # while (i < len(tuples)):
+    #     if (tuples[i][-1] > m):
+    #         m = tuples[i][-1]
+    #         print(f"m is {m}")
+    #     i += 1
+    #     print(f"i is {i}")
 
 def remove_adjacent(nums):
     """
@@ -68,6 +91,15 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
+    i = 0
+    while (i < len(nums)):
+        if nums[i] == nums[i + 1]:
+            nums.pop(i)
+        else:
+            i += 1
+        if i+1 >= len(nums):
+            break
+    return nums
     raise NotImplementedError
 
 
@@ -85,4 +117,9 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
+    a = list1
+    for item in list2:
+        a.append(item)
+    a.sort()
+    return a #need to revisit. see https://www.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/linear-time-merging
     raise NotImplementedError

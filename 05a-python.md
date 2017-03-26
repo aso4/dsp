@@ -84,7 +84,31 @@ sorted(student_tuples, key=lambda student: student[2])
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are a concise way to create lists and has the following
+>> syntax: [ expression for item in list if conditional]. This is equivalent
+>> to the following code:
+```
+for item in list:
+  if conditional:
+    expression
+```
+>> Expressed in a different way: new_list = [expression(i) for i in old_list if filter(i)]
+>> where new_list is the result, expression(i) is based on the variable used for
+>> each element in the old list, for i in old_list is the old_list being
+>> iterated over in a for loop, and if filter(i) is the applied filter.
+
+>> Equivalent code using map() and filter() is:
+>> new_list = list(map(expression, filter(lambda x: conditional, old_list)))
+
+>> Set comprehensions work if notation is specified:
+>> pairs = {(x, x+2) for x in primes if x+2 in primes}
+
+>> as does dictionary comprehensions:
+>> d = dict((key, value) for (key, value) in iterable)
+>> or
+>> d = {key: value for (key, value) in iterable}
+
+>> # this question needs to be revisited.
 
 ---
 

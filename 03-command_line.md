@@ -69,6 +69,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 > > ls -R - also displays subdirectories
 > > ls -u - show by file access time
 > > ls -C - display in columnar format
+> > ls -F - display directories and file extensions
 
 ---
 

@@ -81,7 +81,12 @@ with open('faculty.csv') as csvfile:
 # pattern = r"\w+@" # match this pattern
 # replace_before_at(pattern)
 # print ('deleted %s instances of email prependages' % email_prependages)
-#
+
 # import collections
 # counter=collections.Counter(email_array)
 # print(counter)
+
+# question 5
+# print(email_array)
+# csv_writer = csv.writer(open('advanced_python_csv.py', 'w'), delimiter='\n')
+# csv_writer.writerow(email_array)
